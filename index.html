@@ -1,1 +1,85 @@
-hello world!
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/8637de39ef.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+      @font-face{
+        font-family: 'BMHANNAPro';
+        src: url(BMHANNAPro.ttf);
+      }
+
+      body{
+        font-family: BMHANNAPro;
+      }
+      .logo{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div style="margin : 10rem auto;">
+    <div class = "container">
+      <h3 class="logo"> 코리아 헬스 </h3>
+      <h1 class="logo display-4">기구 사용법</h1>
+    <div style="margin : 3rem auto;">
+
+      <div class="input-group mb-3">
+<input id = "search_bar" class="form-control form-control-lg" type="text" placeholder="기구번호를 입력하세요.">
+  <div class="input-group-append">
+    <button type="button" class="btn btn-dark" onclick="jump()"> 
+      <i class="fas fa-search"></i> 
+    </button>
+  </div>
+</div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var videos = [];
+        videos.push("1");
+        videos.push("2");
+        videos.push("3");
+        videos.push("4");
+        videos.push("5");
+        videos.push("6");
+
+        function jump(){
+          var temp = "";
+          temp = temp + search_bar.value;
+
+          var flag = false;
+          var i;
+          for(i = 0; i<videos.length; i++){
+            if(videos[i] == temp){
+              flag = true;
+              break;
+            }
+          }
+
+          
+          if(flag == true){
+            location.href = temp+"/"+temp+".html";  
+          }else{
+            alert("번호를 확인해주세요!");
+          }
+          
+        }
+
+
+    </script>
+  </body>
+</html>
