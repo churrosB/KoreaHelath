@@ -1,54 +1,231 @@
-﻿<!doctype html>
-<html lang="en">
-  <head>
-    <script src="https://kit.fontawesome.com/8637de39ef.js"></script>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<script src="https://kit.fontawesome.com/60df08c28b.js"></script>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Gym</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">					
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<style>
+				@font-face { 
+					font-family: 'yanolja'; 
+					src: url(BMJUA_ttf.ttf); 
+					} 
+					
+				h1, div { 
+					font-family: yanolja; 
+					}
 
-    <title>Hello, world!</title>
-    <style>
-      @font-face{
-        font-family: 'BMHANNAPro';
-        src: url(BMHANNAPro.ttf);
-      }
+					hr{
+						border : 2px solid black;
+					}
 
-      body{
-        font-family: BMHANNAPro;
-      }
-      .logo{
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
+			</style>
+		</head>
+		<body>
+
+			  <header id="header" id="home">
+			    <div class="container">
+			    	<div class="row header-top align-items-center">
+			    		<div class="col-lg-4 menu-top-middle justify-content-center d-flex">
+							<a href="index.html">
+									<div style = "margin : 0.8rem auto;"></div>
+									<h1>신방동 코리아</h1>
+								
+							</a>		
+								    			
+			    		</div>
+			    	</div>
+			    </div>	
+			    	<hr>
+			  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>		
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12 col-md-12">
+							<h1 class="text-uppercase">
+								기구 사용법
+							</h1>
+							<p class="text-white text-uppercase pt-20 pb-20">
+								코리아 헬스 관장님의 친절 영상강좌.
+							</p>
+							<div class="row justify-content-center align-items-start">
+									<div class="col-lg-3 col-md-6 cols">
+										<input type="number" id = "search_bar" placeholder="기구번호를 입력하세요." class="form-control mb-20">
+									</div>
+									<div class="col-lg-3 col-md-6 cols">	
+										<a href="#" class="primary-btn header-btn text-uppercase" onclick="jump()">영상보기</a>
+									</div>
+								</div>
+						</div>												
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
 
 
-    <div style="margin : 10rem auto;">
-    <div class = "container">
-      <h3 class="logo"> 코리아 헬스 </h3>
-      <h1 class="logo display-4">기구 사용법</h1>
-    <div style="margin : 3rem auto;">
+			<!-- Start top-course Area -->
+			<section class="top-course-area section-gap" id="top-course">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-9">
+							<div class="title text-center">
+								<h1 class="mb-10">초보자 추천코스</h1>
+								<hr>
+							</div>
+						</div>
+					</div>											
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c1.jpg" alt="">
+								</div>
+								<span class="course-status">Course Available</span>
+								<a href="#"><h4>Running Classes <span>$275</span></h4></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c2.jpg" alt="">
+								</div>
+								<span class="course-status">Course Available</span>
+								<a href="#"><h4>Weight Lifting Classes <span>$200</span></h4></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c3.jpg" alt="">
+								</div>
+								<span class="course-status">Course Available</span>
+								<a href="#"><h4>Body Combat Classes <span>$225</span></h4></a>
+							</div>
+						</div>	
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c4.jpg" alt="">
+								</div>
+								<span class="course-status">Course Available</span>
+								<a href="#"><h4>Organic Yoga Classes <span>$300</span></h4></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c5.jpg" alt="">
+								</div>
+								<span class="course-status">Course Available</span>
+								<a href="#"><h4>Raw Fitness Classes <span>$500</span></h4></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c6.jpg" alt="">
+								</div>
+								<span class="course-status">Course Available</span>
+								<a href="#"><h4>Body Building Classes <span>$250</span></h4></a>
+							</div>
+						</div>																		
+					</div>
+				</div>	
+			</section> -->
+			<!-- End top-course Area
+							
 
-      <div class="input-group mb-3">
-<input id = "search_bar" class="form-control form-control-lg" type="number" placeholder="기구번호를 입력하세요.">
-  <div class="input-group-append">
-    <button type="button" class="btn btn-dark" onclick="jump()"> 
-      <i class="fas fa-search"></i> 
-    </button>
-  </div>
-</div>
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4>About Us</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4>Contact Us</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+								</p>
+								<p class="number">
+									012-6532-568-9746 <br>
+									012-6532-569-9748
+								</p>
+							</div>
+						</div>						
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4>Newsletter</h4>
+								<p>You can trust us. we only send  offers, not a single spam.</p>
+								<div class="d-flex flex-row" id="mc_embed_signup">
 
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
+
+									  <form class="navbar-form" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
+									    <div class="input-group add-on">
+									      	<input class="form-control" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+											<div style="position: absolute; left: -5000px;">
+												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+											</div>
+									      <div class="input-group-btn">
+									        <button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
+									      </div>
+									    </div>
+									      <div class="info mt-20"></div>									    
+									  </form>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="footer-bottom row">
+						<p class="footer-text m-0 col-lg-6">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+						<div class="footer-social col-lg-6">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>	
+			<!-- End footer Area -->
+			<script>
         var videos = [];
         videos.push("1");
         videos.push("2");
@@ -81,5 +258,26 @@
 
 
     </script>
-  </body>
-</html>
+			</script>
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>	
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>			
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
+
+
+
